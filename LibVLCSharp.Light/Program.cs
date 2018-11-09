@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibVLCSharp.Shared;
+using System;
 
 namespace LibVLCSharp.Light
 {
@@ -6,7 +7,14 @@ namespace LibVLCSharp.Light
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Core.Initialize();
+
+            var libVLC = new LibVLC();
+            libVLC.Log += (sender, e) => Console.WriteLine(e.Message);
+            var media = new Media(libVLC, "matrix.mkv");
+            var mp = new MediaPlayer(media);
+            mp.Play();
+            Console.ReadKey();
         }
     }
 }

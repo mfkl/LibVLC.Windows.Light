@@ -1,8 +1,41 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>net47</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <PlatformTarget>x64</PlatformTarget>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="LibVLCSharp" Version="0.0.4" />
+    <PackageReference Include="VideoLAN.LibVLC.Windows" Version="3.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <VlcWindowsX64IncludeFiles Include="libvlc.dll;libvlccore.dll" />
+    <VlcWindowsX64IncludeFiles Include="plugins\video_output\libdirect3d11_plugin.dll" />
+    <VlcWindowsX64IncludeFiles Include="plugins\video_output\libdirect3d9_plugin.dll" />
+    <VlcWindowsX64IncludeFiles Include="plugins\video_output\libdirectdraw_plugin.dll" />    
+    <VlcWindowsX64IncludeFiles Include="plugins\access\libfilesystem_plugin.dll" />
+    <VlcWindowsX64IncludeFiles Include="plugins\audio_output\libdirectsound_plugin.dll" />
+    <VlcWindowsX64IncludeFiles Include="plugins\audio_output\libmmdevice_plugin.dll" />
+    <VlcWindowsX64IncludeFiles Include="plugins\audio_output\libwasapi_plugin.dll" />
+    <VlcWindowsX64IncludeFiles Include="plugins\audio_output\libwaveout_plugin.dll" />
+    <VlcWindowsX64IncludeFiles Include="plugins\codec\%2A" />
+    <VlcWindowsX64IncludeFiles Include="plugins\demux\%2A" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="matrix.mkv">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
