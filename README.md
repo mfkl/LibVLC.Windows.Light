@@ -1,0 +1,64 @@
+﻿## Total size: 54.2MB
+
+### Codecs folder accounting for 41MB (avcodec 18.8MB)
+
+https://github.com/mfkl/LibVLC.Windows.Light/blob/master/LibVLCSharp.Light/LibVLCSharp.Light.csproj#L22-L34
+
+- liba52_plugin.dll 104K 
+- libadpcm_plugin.dll 47K 
+- libaes3_plugin.dll 40K 
+- libaraw_plugin.dll 60K 
+- libaribsub_plugin.dll 337K 
+- libavcodec_plugin.dll 19M 
+- libcc_plugin.dll 72K 
+- libcdg_plugin.dll 42K 
+- libcrystalhd_plugin.dll 110K 
+- libcvdsub_plugin.dll 43K 
+- libd3d11va_plugin.dll 281K 
+- libdca_plugin.dll 205K 
+- libddummy_plugin.dll 61K 
+- libdmo_plugin.dll 56K 
+- libdvbsub_plugin.dll 115K 
+- libdxva2_plugin.dll 239K 
+- libedummy_plugin.dll 36K 
+- libfaad_plugin.dll 293K 
+- libflac_plugin.dll 439K 
+- libfluidsynth_plugin.dll 322K 
+- libg711_plugin.dll 50K 
+- libjpeg_plugin.dll 235K 
+- libkate_plugin.dll 92K 
+- liblibass_plugin.dll 2.5M 
+- liblibmpeg2_plugin.dll 143K 
+- liblpcm_plugin.dll 47K 
+- libmft_plugin.dll 127K 
+- libmpg123_plugin.dll 343K 
+- liboggspots_plugin.dll 40K 
+- libopus_plugin.dll 339K 
+- libpng_plugin.dll 274K 
+- libqsv_plugin.dll 201K 
+- librawvideo_plugin.dll 39K 
+- librtpvideo_plugin.dll 36K 
+- libschroedinger_plugin.dll 1.4M 
+- libscte18_plugin.dll 43K 
+- libscte27_plugin.dll 55K 
+- libsdl_image_plugin.dll 731K 
+- libspdif_plugin.dll 36K 
+- libspeex_plugin.dll 162K 
+- libspudec_plugin.dll 44K 
+- libstl_plugin.dll 43K 
+- libsubsdec_plugin.dll 74K 
+- libsubstx3g_plugin.dll 42K 
+- libsubsusf_plugin.dll 49K 
+- libsvcdsub_plugin.dll 41K 
+- libt140_plugin.dll 37K 
+- libtextst_plugin.dll 41K 
+- libtheora_plugin.dll 325K 
+- libttml_plugin.dll 118K 
+- libtwolame_plugin.dll 154K 
+- libuleaddvaudio_plugin.dll 38K
+- libvorbis_plugin.dll 764K 
+- libvpx_plugin.dll 3.6M 
+- libwebvtt_plugin.dll 182K 
+-  libx264_plugin.dll 1006K
+- libx265_plugin.dll 4.8M 
+- libzvbi_plugin.dll 1.5M 
